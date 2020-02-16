@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>CS2205 Programming Assignment Unit 3 Part 5 to 11</title>
+	
+	<!-- Styling for deprecated HTML attributes -->
+	<style>
+		h1 {
+			font-weight: 100;
+		}
+		.borderedimg {
+			border: 2px solid red;
+		}
+		table, th, td {
+			border: 1px solid black;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 20px;
+		}
+	</style>
+	
+</head>
+<body style="font-family: arial;">
+	
+	<!-- Start of first section -->
+	<div style="padding: 20px;">
+		
+		<a id="toplink" href="#bottomlink">Jump to bottom</a>
+		
+		<h1>Create links to four different pages on four different websites that should all open in a new window</h1>
+		
+		<!-- Add four links that open in a new window/page -->
+		<p style="line-height: 2;">
+			<a target="_blank" href="https://www.youtube.com/">https://www.youtube.com/</a><br>
+			<a target="_blank" href="https://tutsplus.com/">https://tutsplus.com/</a><br>
+			<a target="_blank" href="https://www.codecademy.com/">https://www.codecademy.com/</a><br>
+			<a target="_blank" href="https://nodejs.org/en/">https://nodejs.org/en/</a>
+		</p>
+	</div>
+	<!-- First section end -->
+	
+	<!-- Start of second section -->
+	<div style="padding: 20px;">
+		<h1>Display five different images. Skip two lines between each image. Each image should have a title</h1>
+		
+		<!-- a paragraph containing four images which are double spaced -->
+		<p style="line-height:2;">
+			<img src="img/img_1.jpg" alt="Trinidad, Bolivia" height="180" width="300"><br>
+			Figure 1: Early morning in the Bolivian Amazon, Trinidad, Bolivia (lapoubelle1969, 2018)
+			<br>
+			<br>
+			<img src="img/img_2.jpg" alt="La Paz, Bolivia" height="180" width="300"><br>
+			Figure 2: La Paz with Illimani in the background, Bolivia (lapoubelle1969, 2018)
+			<br>
+			<br>
+			<img src="img/img_3.jpg" alt="Cordillera Real, Bolivia" height="180" width="300"><br>
+			Figure 3: Cordillera Real, Bolivia (lapoubelle1969, 2018)
+			<br>
+			<br>
+			<img src="img/img_4.jpg" alt="Quirimba Island, Mozambique" height="180" width="300"><br>
+			Figure 4: Beach and ocean, Quirimba Island, Mozambique (lapoubelle1969, 2018)
+			<br>
+			<br>
+			<img src="img/img_5.jpg" alt="Corn Island, Nicaragua" height="180" width="300"><br>
+			Figure 5: Glorious Little Corn Island, Nicaragua (lapoubelle1969, 2018)
+			<br>
+			<br>
+		</p>
+	</div>
+	<!-- Second section end -->
+	
+	<!-- Start of third section -->
+	<div style="padding: 20px;">
+		<h1>Display an image that has a border of size 2, a width of 200, and a height of 200</h1>
+		
+		<p>The border attribute is deprecated in HTML5. The style for the image is contained in the head of this document and the class "borderedimg" is applied
+		to the img element.</p>
+		
+		<img class="borderedimg" src="img/img_6.jpg" alt="Corn Island, Nicaragua" height="200" width="200">
+	</div>
+	<!-- Third section end -->
+	
+	<!-- Start of fourth section -->
+	<div style="padding: 20px;">
+		<h1>Display an image that when clicked will link to itself and will display the image in the browser by itself</h1>
+		
+		<a target="_blank" href="img/img_7.jpg"><img src="img_7.jpg" alt="Corn Island, Nicaragua" height="250" width="400"></a>
+	</div>
+	<!-- Fourth section end -->
+	
+	<!-- Start of the fifth section -->
+	<div style="padding: 20px;">
+		<h1>Pick 5 corporations and hunt down their current stock prices. Place them in a neatly arranged table with their name, 
+		symbol, last price, 52wk high, 52wk low and PE ratio. The end result should look like the following. Notice that he first column 
+		is aligned left and the rest are centered</h1>
+		
+		<p>Since the border attribute is deprecated in HTML5, this is contained in the head of this document.</p>
+		
+		<!-- Add a stock listing table with a table heading, 6 rows and 6 columns -->
+		<table>
+			<thead>
+			<tr style=" text-align: center;">
+			<td colspan="6"><h2>My Stock Automotive Picks</h2></td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr style="font-weight: bold;">
+				<td>Name</td>
+				<td>Symbol</td>
+				<td>Last Price</td>
+				<td>52wk High</td>
+				<td>52wk Low</td>
+				<td>PE Ratio</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">Thor Industries Inc</td>
+				<td style="text-align: center;">THO</td>
+				<td style="text-align: center;">87.01</td>
+				<td style="text-align: center;">87.18</td>
+				<td style="text-align: center;">42.05</td>
+				<td style="text-align: center;">28.19</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">FORD MOTOR CO</td>
+				<td style="text-align: center;">F</td>
+				<td style="text-align: center;">8.27</td>
+				<td style="text-align: center;">10.56</td>
+				<td style="text-align: center;">8.02</td>
+				<td style="text-align: center;">276.45</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">GENERAL MOTORS CO</td>
+				<td style="text-align: center;">GM</td>
+				<td style="text-align: center;">35.30</td>
+				<td style="text-align: center;">41.90</td>
+				<td style="text-align: center;">32.97</td>
+				<td style="text-align: center;">7.72</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">TESLA INC</td>
+				<td style="text-align: center;">TSLA</td>
+				<td style="text-align: center;">787.22</td>
+				<td style="text-align: center;">968.99</td>
+				<td style="text-align: center;">176.99</td>
+				<td style="text-align: center;">-</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">Honda Motor Co Ltd</td>
+				<td style="text-align: center;">HMC</td>
+				<td style="text-align: center;">26.95</td>
+				<td style="text-align: center;">29.44</td>
+				<td style="text-align: center;">22.87</td>
+				<td style="text-align: center;">10.95</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- Fifth section end -->
+	
+	<!-- References -->
+	<div style="padding: 20px; background-color: lightgrey;">
+		<p>References</p>
+		<div>Car and Auto Stock: Prices and Tips. (n.d.). Retrieved February 16, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://www.wallstreetsurvivor.com/find-stocks/interest/cars/">
+				https://www.wallstreetsurvivor.com/find-stocks/interest/cars/
+			</a>
+		</div>
+		<div>FORD MOTOR COMPANY. (n.d.). Retrieved February 16, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://www.msn.com/en-us/money/stockdetails/fi-a1sjw7">
+				https://www.msn.com/en-us/money/stockdetails/fi-a1sjw7
+			</a>
+		</div>
+		<div>GENERAL MOTORS COMPANY. (n.d.). Retrieved February 16, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://www.msn.com/en-us/money/stockdetails/fi-a1tyrw">
+				https://www.msn.com/en-us/money/stockdetails/fi-a1tyrw
+			</a>
+		</div>
+		<div>HONDA MOTOR CO., LTD. (n.d.). Retrieved February 16, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://www.msn.com/en-us/money/stockdetails/fi-a1uqyc">
+				https://www.msn.com/en-us/money/stockdetails/fi-a1uqyc
+			</a>
+		</div>
+		<div>lapoubelle1969. (2018, January 2). Bolivian landscapes. Retrieved February 15, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://notesfromcamelidcountry.net/2013/01/22/bolivian-landscapes/">
+				https://notesfromcamelidcountry.net/2013/01/22/bolivian-landscapes/
+			</a>
+		</div>
+		<div>lapoubelle1969. (2016, July 24). Memories of Magical Mozambique. Retrieved February 15, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://notesfromcamelidcountry.net/category/maputo/">
+				https://notesfromcamelidcountry.net/category/maputo/
+			</a>
+		</div>
+		<div>lapoubelle1969. (2018, August 9). 2013, a year of extremes in pictures. Retrieved February 15, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://notesfromcamelidcountry.net/category/nicaragua/">
+				https://notesfromcamelidcountry.net/category/nicaragua/
+			</a>
+		</div>
+		<div>TESLA, INC. (n.d.). Retrieved February 16, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://www.msn.com/en-us/money/stockdetails/fi-a24kar">
+				https://www.msn.com/en-us/money/stockdetails/fi-a24kar
+			</a>
+		</div>
+		<div>THOR INDUSTRIES, INC. (n.d.). Retrieved February 16, 2020, from</div>
+		<div style="text-indent: 20px; padding-bottom: 20px;">
+			<a target="_blank" href="https://www.msn.com/en-us/money/stockdetails/fi-a247k2">
+				https://www.msn.com/en-us/money/stockdetails/fi-a247k2
+			</a>
+		</div>
+		
+		<a id="bottomlink" href="#toplink">Jump to top</a>
+		
+	</div>
+</body>
+</html>
