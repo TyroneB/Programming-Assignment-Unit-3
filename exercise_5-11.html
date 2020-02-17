@@ -12,14 +12,16 @@
 		.borderedimg {
 			border: 2px solid red;
 		}
-		table, th, td {
-			border: 1px solid black;
-		}
 		table {
+			border-top: 2px solid darkgrey;
+			border-left: 2px solid darkgrey;
+			border-right: 4px solid darkgrey;
+			border-bottom: 4px solid darkgrey;
 			border-collapse: collapse;
 		}
 		th, td {
-			padding: 20px;
+			border: 2px solid darkgrey;
+			padding: 10px;
 		}
 	</style>
 	
@@ -88,7 +90,7 @@
 	<div style="padding: 20px;">
 		<h1>Display an image that when clicked will link to itself and will display the image in the browser by itself</h1>
 		
-		<a target="_blank" href="img/img_7.jpg"><img src="img_7.jpg" alt="Corn Island, Nicaragua" height="250" width="400"></a>
+		<a target="_blank" href="img/img_7.jpg"><img src="img/img_7.jpg" alt="Corn Island, Nicaragua" height="250" width="400"></a>
 	</div>
 	<!-- Fourth section end -->
 	
@@ -104,7 +106,7 @@
 		<table>
 			<thead>
 			<tr style=" text-align: center;">
-			<td colspan="6"><h2>My Stock Automotive Picks</h2></td>
+			<td colspan="6"><h2 style="font-style: italic;">My Automotive Stock Picks</h2></td>
 			</tr>
 			</thead>
 			<tbody>
